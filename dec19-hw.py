@@ -40,7 +40,8 @@ for yrs,mov in allmovies.items():
     
 # 1.1 TO ITERATE year wise ALL MOVIES
 for yrs,mov in allmovies.items():
-    print(f"{yrs} -----> {mov} \n")
+    for mv in mov:
+        print(f"{yrs} -----> {mv} \n")
     
 #  1.2 TO ITERATE MOVIES and thire perticular cast
 for yrs,mov in allmovies.items():
@@ -73,8 +74,23 @@ for yrs,mov in allmovies.items():
             print(f"Akshaye Khanna appear in {mv} on {yrs}")
 print(f"total movies from 2023 to 2025 are {count}")
 
+# 5. How do you count how many movies were released in each year?
+
+for yrs,mov in allmovies.items():
+      print(f"Movies were released in {yrs}--->{len(mov)}")
+    
+# 6. How do you print all years available in the dataset?
+for yrs in allmovies.keys():
+    print(yrs)
+    
+# 7. How do you print all movie names available in the dataset?
+for yrs,mov in allmovies.items():
+    for mv in mov:
+        print(f"{mv}")
+
 
 
 
 
         
+
