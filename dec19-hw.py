@@ -39,16 +39,16 @@ for yrs,mov in allmovies.items():
             print(f"Movie release in 2023 is : {movie}")
     
 # 1.1 TO ITERATE year wise ALL MOVIES
-# for yrs,mov in allmovies.items():
-#     print(f"{yrs} -----> {mov} \n")
+for yrs,mov in allmovies.items():
+    print(f"{yrs} -----> {mov} \n")
     
 #  1.2 TO ITERATE MOVIES and thire perticular cast
-# for yrs,mov in allmovies.items():
-#     for mov,cast in mov.items():
-#         print(f"{mov} ---> {cast}\n")
+for yrs,mov in allmovies.items():
+    for mov,cast in mov.items():
+        print(f"{mov} ---> {cast}\n")
     
 #2️⃣ How do you print all cast members of the movie Jawan?
-'''for yrs,mov in allmovies.items():
+for yrs,mov in allmovies.items():
     #print(yrs,"--",mov)
     for mov,cast in mov.items():
         if mov=="Jawan":
@@ -56,12 +56,12 @@ for yrs,mov in allmovies.items():
             for word in cast:
                 a=a+1
                 print(f"{a}. Cast of movie {mov} is {word}")
-               '''
+               
 #3️⃣ How do you print movie name + cast for 2024 movies?
-# for yrs,mov in allmovies.items():
-#     if yrs == 2024:
-#         for movie,cast in mov.items():
-#             print(f"\n Movies name is {movie} and cast are {cast}\n")
+for yrs,mov in allmovies.items():
+    if yrs == 2024:
+        for movie,cast in mov.items():
+            print(f"\n Movies name is {movie} and cast are {cast}\n")
             
 #4️⃣ How do you find how many movies Akshaye Khanna is acting in from 2023 to 2025? 
 count=0
@@ -72,6 +72,7 @@ for yrs,mov in allmovies.items():
             count=count+1
             print(f"Akshaye Khanna appear in {mv} on {yrs}")
 print(f"total movies from 2023 to 2025 are {count}")
+
 
 
 
