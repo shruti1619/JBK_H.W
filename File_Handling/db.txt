@@ -1,0 +1,8 @@
+Beginner Level
+Write a Python program to find the length of a given string without using len().
+Count the number of vowels and consonants in a string.
+Reverse a string without using slicing ([::-1]).
+Check if a string is a palindrome.
+Count the occurrences of each character in a string.
+Remove all whitespace from a string.
+Convert a string to uppercase and lowercase without using .upper() or .lower().
